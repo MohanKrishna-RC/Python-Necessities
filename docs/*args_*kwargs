@@ -1,0 +1,14 @@
+The syntax *args in function is used to pass
+a variable number of arguments in a function.
+
+The *args allows us to do is take in more arguments than the number of formal arguments that previously defined.
+With *args any number of extra arguments can be tracked on to our current formal parameters.
+
+For example : we want to make a multiply function that takes any number of arguments,
+and able to multiply them all together. 
+It can be done using *args.
+
+Using the *, the variable we associate with * can become iterable.
+Which implies we can use iterate over them, can run some higher order
+functions such as map and filter.
+
