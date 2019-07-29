@@ -1,6 +1,8 @@
 The syntax *args in function is used to pass
 a variable number of arguments in a function.
 
+It is used to pass a non-keyworded, variable-length argument list.
+
 The *args allows us to do is take in more arguments than the number of formal arguments that previously defined.
 With *args any number of extra arguments can be tracked on to our current formal parameters.
 
@@ -12,3 +14,19 @@ Using the *, the variable we associate with * can become iterable.
 Which implies we can use iterate over them, can run some higher order
 functions such as map and filter.
 
+--------------------------**kwargs---------------------------
+
+The syntax **kwargs in function is used to pass a keyworded,
+variable-length argument list. The reason we use double star allows
+us to pass through keyword arguments (and any number of them).
+
+A keyboard argument is where you provide a name to the variable
+as you pass it into the function.
+
+We can think of yje kwargs as being a dictionary that maps each keyword
+to the value that we pass alongside it.
+Which is why, When we iterate over the kwargs there doesn't seem to be any order
+in which they are printed out.
+
+Note : args and kwargs are just an intutionary names, we can
+put any names there.
