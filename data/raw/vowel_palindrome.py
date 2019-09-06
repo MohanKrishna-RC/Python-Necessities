@@ -43,3 +43,16 @@ def palindrome(s):
 
 s = 'abcuhuvmnba'
 palindrome(s) 
+
+
+
+
+
+
+
+classes = ['laughter', 'crying', 'clapping', 'screaming', 'wind', 'thunder', 'silence', 'footsteps', 'run']
+classes[1]
+
+s = 'y'
+exec(s + " = 'mohan'")
+print(y)

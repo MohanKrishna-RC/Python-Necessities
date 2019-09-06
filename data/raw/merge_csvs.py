@@ -1,8 +1,8 @@
 from glob import glob
 
-with open('main.csv', 'a') as singleFile:
-    for csv in glob('final_csv/*.csv'):
-        if csv == '../main.csv':
+with open('Happy/Happy_csv.csv', 'a') as singleFile:
+    for csv in glob('Happy/*.csv'):
+        if csv == 'Happy/Happy_csv.csv':
             pass
         else:
             for line in open(csv, 'r'):
