@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: caser
+Version: 1.0
+Summary: Hides a message with a caser cipher
+Home-page: UNKNOWN
+Author: mohan
+Author-email: mk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language : : Python : : 3
+Classifier: Licence : : OSI Approved : : MIT License
+Classifier: Operating System : : OS Independent

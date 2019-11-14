@@ -11,4 +11,4 @@ while True:
     os.system('sudo gcloud beta compute --project "athenas-owl-dev" ssh --zone "us-east1-c" "i-ao-acoustic-train-2k19"')
     # time.sleep(40)
     # os.system('gcloud compute instances stop i-ao-acoustic-train-2k19')
-    time.sleep(100)
+    time.sleep(70)
