@@ -1,0 +1,79 @@
+Object-Oriented Programming : 
+
+OOP is a programming language model in which programs are organized around objects, rather than functions and logic. Classes and Objects are core concepts of OOPs.
+
+Class :
+
+A class is a template/blueprint for creating objects. It provides the properties (What all data an object can have - Variables), and behavior (things an object can do - methods)
+
+Analogy :
+
+We can assume a class as a blueprint of a house - it's not a real physical house but just a specification with all the properties a house will have - rooms, floors, area etc.
+
+Key points in Class:
+
+1. It is used to create custom types.
+2. The class keyword is used to define a new class.
+3. It defines the structure and behavior of objects.
+4. Conventionally a class name uses CamelCase.
+
+Objects:
+
+An object is a particular instance of the class. Two different objects of a class can have different values for properties and are (mostly) independent of each other.
+
+Let a House class be defined, if there are 2 objects of class House - they can have a different number of rooms, area, address, no of floors etc.
+
+Analogy :
+
+Think of an object as as actual physical house created as per the blue print (class House).
+
+Key points about an Object:
+
+1. Objects are real, have a state and occupy memory.
+2. Created/instantiated from a class specification and cannot exist without a class.
+3. There can be multiple objects of a class, each will have its own properties.
+
+Instance Methods:
+
+They are the most common kind of methods in Python classes. These are the functions defined in a class and are called using objects of the class.
+
+They are called instance methods because they can access unique data of a specific class instance (object).
+
+Key points in Instance Methods:
+
+1. Called using objects.
+2. Must have self as the parameter.
+3. (self is another python term. We can use self to access any data or other instance methods which resides in that class. These cannot be accessed without self)
+
+Thought for Efficiency:
+
+If we specify the number of rooms of a house while creating the House object itself instead of doing it later.
+
+Initializer Method.
+
+It is an instance method for initializing new Objects with values for properties. We define it using __init__().
+
+Key points regarding Initializer method:
+
+1. must be called __init__() #double underscore is used by python runtime.
+2. The first parameter is self.
+3. If the Initializer method is present, the constructor calls __init__().
+
+Note:
+
+The underscore prefix in a variable/method name is meant as a hint to another programmer that a variable or method starting with a single underscore is intended only for internal use.
+
+
+Inheritance:
+
+It refers to defining a new class with little or no modification to an existing class. A sub-class is derived from a base-class, inheriting its behavior and making behavior specific to sub-class.
+
+
+Why Inheritance?
+
+Inheritance allows a derived class to inherit all the features from its base class, adding new features to it. This results in re-usability of code.
+
+Intution:
+
+
+

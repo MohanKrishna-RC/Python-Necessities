@@ -1,0 +1,46 @@
+There are three main ways to move to the cloud:
+
+Re-host : 
+
+A re-host scenario is the most straightforward type of move.
+It involves no change to the way our application is built or how it runs.
+A re-host move would mean we use all the same components, combined in just the same way, only now they're in the cloud. 
+It's a lot like moving into a new house that has the exact same floor plan as the current one. All the furniture goes into the same room it's in now, and it's going to feel pretty familiar when we get there.
+
+
+The main draw of a re-host move is that it may offer the least amount of complication necessary in order to take advantage of going to the cloud.
+Scalable applications, for example, can gain the ability to automatically manage necessary application resources.
+
+If the application infrastructure is not organized in such a way that gives it the ability to scale, a refactor may be necessary instead.
+
+
+Re-platform:
+
+If a component of our current application setup isn't working out well for us, we're probably going to want to re-platform. Changing at least one component of our architecture involves re-platform.
+
+Just like we move to a small apartment in one country to another small apartment in another country, a re-platform doesn't change the basic nature of our application, but it change its appearance and environment.
+In the case of database change, we'll have all the same data, just organized or formatted a little differently. 
+In most of the cases we needn't do the things manually. There are tools for that available.
+
+We might re-platform in order to enable us to better meet a business demand in future, such as scaling up, integrating with other technological components, or choosing a more modern technology stack.
+
+Refactor : 
+
+As with code, refactoring is done when fundamental changes need to be made in order for our application to meet a business need. The specifics necessarily differ case-by-case, but typically involve changes to architectural components or how those components relate to one another.
+This type of move may also involve changing application code in order to optimize the application's performance in a cloud environment.
+
+We can think of it as moving out from our parent's basement in the suburbs and getting a nice townhouse in the city. We don't prefer taking the old sofa to the new house, so all we need some new furniture, and for our neighbour's sake, probably window dressings.
+
+Refactoring may enable us to modernize a dated application or make it more efficient in general. With greater efficiency, we can better take advantages of services that cloud providers typically offer, like bursting resources or attaining deep analytical insight.
+
+If a refactor is necessary but time is scarce, it may be better to re-host or re-platform first, then refactor later. That way, we'll have a job well done later instead of a hasty, botched migration sooner.
+
+
+Moving cloud actually helps us to re-think what's necessary and what should be cleaned in our application. And more over it can help us to clean most of our code.
+
+As cloud storage is inexpensive these days, there may be some things that don't make sense to store any longer, or at least not keep stored with our primary application. If data cannot be discarded due to policy or regulations, we may choose a different storage class to house data that we don't expect to need anytime soon outside of our main application.
+
+In the case of very large or complex applications with many components or many teams working together at the same time, a more gradual approach may be more appropriate than the Big Bang approach and may help to mitigate the risk of any interruptions. This means migrating in stages, component by component, and running tests between stages to ensure that all parts of the application are communicating with each other as expected.
+
+
+
