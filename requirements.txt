@@ -79,7 +79,7 @@ fastcache==1.0.2
 fasteners==0.14.1
 ffmpeg==1.4
 filelock==3.0.8
-Flask==0.12
+Flask==1.0
 Flask-Cors==3.0.6
 future==0.17.1
 gast==0.2.2
