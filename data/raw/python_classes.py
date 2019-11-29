@@ -126,3 +126,14 @@ bungalow.room_details()
 
 
 
+
+
+####################################################################################
+
+class Housing:
+    def __repr__(self):
+        return "This complete code is for describing the housing system"
+
+housing = Housing()
+
+print(housing)
