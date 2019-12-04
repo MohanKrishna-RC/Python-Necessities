@@ -1,0 +1,5 @@
+Cs at banks write code that determines if someone is eligible for a mortgage. And at insurance companies build machine learning systems that decide how much someone pays for their policy.
+
+GUI(Graphical User Interface), is a form of user interface that allows users to interact with electronic devices through graphics icons. It's a fancy term for what people call an "application". 
+
+"IDLE" -- Integrated Development and Learning Environment.

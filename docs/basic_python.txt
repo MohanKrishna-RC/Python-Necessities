@@ -1,0 +1,67 @@
+"Variables" in layman's terms are essentially memory boxes that hold a value for you.
+
+
+Learning how to manage a group of data with a single Variable.
+When there is a list of items like food, for example, it is not so efficient to manage them with seperate variables, like food1, food2, food3. It is better to have a foods variable to manage the whole list.
+
+The list data type that allows you to manage a group of data all at once.
+You can create a list of follows : [el1, el2..]
+Each value in the list is called an element.
+Unlike lists, you can manage multiple strings and integers as one group.
+
+
+Just like integers and strings, we can assign a list to a variable.
+As a convention, the variable name is pluralized, like foods, as it will contain multiple elements.
+
+Getting an Element of a list.
+
+Each element of a list has a number allocated like 0,1,2...
+These are called index numbers.
+Index numbers always start from 0.
+We can get individual elements by writing list[index].
+
+#Updating an Element of a List
+
+This can be done by writing list[index] = value.
+
+#Appending Elements to a list
+
+We can also add new elements to a list.
+Use list.append(value) allow us to add a new element to the end of a defined list.
+
+Queue:
+
+Python supports multithreading, and this is facilitated by the Standard Library's Queue module.
+
+This module lets you implement queue data structures. These are data structures that let you add and retrieve entries according to a specific rule.
+
+FIFO queues let you retrieve objects in the order they were added. LIFO queues let you access the most recently added objects first.
+
+Finally, priority queues let you retrieve objects according to the order in which they are stored.
+
+
+
+
+
+# Necessity of writing loops without for.
+Whenever we feel like writing a for statement, you should ask yourself following..
+
+1. Can it be done without a for loop? Most pythonic
+2. Can it be done using list comprehensions ? if yes, use it
+3. Can We do it without indexing arrays? if not, thing about using enumerate.
+
+What is enumerate?
+Sometimes we need both the index in an array as well as the value in an array. In such cases, we should prefer using enumerate rather than indexing the list.
+
+
+....NEVER INDEX A LIST, WHEN WE CAN DO WITHOUT THAT...
+
+####### Dictionary comprehension ##############
+The concepts behind this is similar to list comprehension.
+
+Use List Comprehensions and Dict Comprehensions when you need a for loop. Use enumerate if we need array index.
+
+
+
+
+
