@@ -29,12 +29,12 @@ class QualityParams(object):
         roi_coordinates_distance = list(zip(self.df['xmin'],self.df['ymin'],self.df['xmax'],self.df['ymax']))
         frame_coordinate_distance = list(zip(self.df['xmin'],self.df['ymin'],self.df['xmax'],self.df['ymax']))
         return roi_coordinates_distance, frame_coordinate_distance
-
+        
     def area_of_the_frame(self):
         _,frame_coordinate_distance = self.dist_betw_coordinates()
         area_of_frame = [np.sqrt(((frame_coordinate_distance[i][2]-frame_coordinate_distance[i][0])** 2 + (frame_coordinate_distance[i][3] - frame_coordinate_distance[i][1])**2)) for i in range(len(frame_coordinate_distance))]
         return area_of_frame
-        
+
     def area_of_roi(self):
         roi_coordinates_distance,_ = self.dist_betw_coordinates()
         area_of_roi = [np.sqrt(((roi_coordinates_distance[i][2]-roi_coordinates_distance[i][0])** 2 + (roi_coordinates_distance[i][3] - roi_coordinates_distance[i][1])**2)) for i in range(len(roi_coordinates_distance))]
