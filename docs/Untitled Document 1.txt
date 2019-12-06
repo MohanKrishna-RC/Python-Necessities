@@ -1,0 +1,31 @@
+The Internet:
+The Internet, in a very basic sense, is a bunch of computers linked together that can communicate with each other.
+
+what is DNS?
+The DNS, or Domain Name System, is an important part of how the internet works today. It's the bit of the internet that translates human-friendly domain names, such as "google.com" into machine-readable IP addresses, such as 173.194.32.195. Before we explain what DNS is, we must talk about IP addresses, servers, and domain names.
+
+What is an IP address?
+An IP address, or internet protocol address, is basically a unique label assigned to any computer or device that's on the Internet. An IP address can be used to find and route data and messages to a computer, i.e it allows us to address a computer, hence the name, IP address.
+
+An IP address look like this : 173.194.32.195
+
+That is, it is made up of four numbers between 0 and 255, seperated by dots. An IP address can be used in your browser like a domain name to get to a website. Take the example IP address above 173.194.32.195 (NOT THIS NOW), and put it in your browser address bar. This should load up the google home page. It's much easier to remember the domain google.com than the IP address. This is possible because of the DNS.
+
+What is a DNS server?
+Server is simply a computer on the Internet that hosts some service that can be accessed over the internet. For instance, a computer that hosts a website, is often called a web server. You can think of it as a computer that, when requested for a page of a website, serves up that page in response to your request.
+
+The DNS is a disturbed system arranged in a heirarchy, made up a lots of DNS servers. A DNS server is any computer that is registered to join the DNS. It has an index of domain names and IP addresses, and when requested, it can tell you the current IP address associated with a domain name. If it doesn't know, then it will try to find out from other DNS servers. So when you type a domain name into your browser, your browser asks a DNS server what the IP address is for this domain, and the DNS server tries to tell you.
+
+DNS(Domain Name System) Lookup : We can assume it as a phonebook for the internet. The URL that you typed in goes to a DNS server and turns it into a IP address. This IP address is what you will be actually sending a request to.
+
+Request/Response Cycle -- This is where the client (your computer) makes a request to a server. That server then processes your request and issues you a response.
+
+API :
+
+Application Programming Interface is a way for two applications to coomunicate with each other. Certain websites or web apps have an API that allows you to extract data from these for use in whatever you are creating. Not every website will have an API and although it's still possible to extract data without the use of an API, that's a topic more suited for web scraping. Some popular APIs include Google Maps, Fb,Twitter etc. Through the use of the Requests module and APIs, you're able to retrieve that data and then create something with it.
+
+Requests Module:
+
+The Requests module is an HTTP library that allows you to send requests and the ability to add headers, form data, and parameters with Pyhton's dictionaries. It will also receive JSON files and allow you to convert them into dictionaries.
+
+

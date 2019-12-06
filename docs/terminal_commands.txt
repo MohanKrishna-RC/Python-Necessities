@@ -1,0 +1,40 @@
+#To check a file whether it exists, just use ls -a -l
+#In this case, the -a argument makes ls show invisible files. The -l #command makes the output look like a list. It displays one row for each #item, with some extra data like the size of each file or its creation #date.
+
+1. Platform services
+2. Application services
+3. Foundational Framework/ Interfaces.
+
+Platform services.
+
+Amazon Sagemaker : It was created to reduce complexities of creating and training AI/ML models. It was designed to cover the entire ML workflow (i.e build,train, deploy and scale models). It uses Jupyter Notebook and have an option of using powerful machines to scale it. It also has many common pre-installed ML algorithms and you can also write complex Deep learning algorithms using Tensorflow and many more and wrap them into Docker containers.The language heavily used is Python.
+
+Amazon sagemaker GroundTruth : It enables you to leverage half a million Amazon Mechanical Turk human labelers and machine learning models to label your data.
+
+Application Services : 
+
+1. Amazon Rekognition is a service which does video and image analysis.
+2. Amazon lex is a voice user interface which does speech recognition, natural language understanding etc.
+
+3. Amazon personalize uses the same technology as Amazon.com recommendation engine. An example could be creating Marketing promotion tailored at specific demographic.
+
+4. Amazon Forecast creates time series forecasts to predict models. Optimizing customer inventory based on demand and supply.
+
+5. Amazon Polly is an automated text to speech service. It provides life like voices over many languages including the sound of breath. It is used in areas like language teaching coureseware.
+
+6. Amazon Comprehend is a Natural Language Processing service. It is used in the area of Named-Entity recognition, customer sentiments etc. One of the customers is Washington Post which creates semantic similarity based on your reading habit and recommends which article to read next.
+
+7. Amazon Textract extracts text, tables and fields in forms from scanned documents. It helps converts archieves of paper documents into digital form. It's used in Legal industry and many other areas.
+
+8. Amazon Transcribe is a service for automatic speech recognition. It provides support for regular audio and telephone and can also identify each speaker properly. It is used in the area of receiving audio dictation, or call center recordings and convert into digital text trascript.
+
+9. Amazon Translate is used to translate languages using deep learning with a state of the art algotrithm like Neural Machine Translation. An use case could be to localize a website translating the content using the local language.
+
+Foundational (Frameworks/Interfaces):
+They are AWS Deep learning AMIs (An Amazon Machine Image (AMI) is a special type of virtual appliance that is used to create a virtual machine within the Amazon Elastic Compute Cloud (EC2). It serves as the basic unit of deployment for services delivered using EC2.) that support various platforms like Tensorflow, Gluon, Apache MXNet, PyTorch and many more.
+
+This foundational services also offer various options of Cloud Based infrastructure such as processing with both GPU and CPU and also on different devices like Greengrass (IOT) and Mobile.
+
+
+
+

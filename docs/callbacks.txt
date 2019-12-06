@@ -1,0 +1,7 @@
+what are callbacks?
+
+A callback is a set of functions to be applied at given stages of the training procedure. You can use callbacks to get a view on internal states and statistics of the model during training.
+
+We define and use a callback when you want to automate some tasks after training/epoch that help you have controls over the training process. This includes stopping training when you reach a certain accuracy/loss score, saving your model as a checkpoint after each successful epoch, adjusting the learning rates over time, and more. Let's dive into some callback functions.
+
+
