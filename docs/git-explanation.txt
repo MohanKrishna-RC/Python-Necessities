@@ -1,0 +1,60 @@
+What is a Version control?
+
+Version control allows you to record changes to a file or set of files over time enabling you to go back to a specific version if required. Git is a Distributed Version Control System.This means that instead of having a snapshot of the latest files, you have a complete mirror of the repository on your local machine.
+
+The repository keeps track of the changes, when they occurred and who by.
+Having the complete repository in your local machine reduces delays due to network and enables you to continue working even when disconnected.
+
+
+
+Steps to be followed.
+
+
+1. git init -- To create a new repository.
+2. git status -- To track the status in the working directory which you create inside the repository.
+
+Note : All files are untracked by Git until it's been told otherwise.
+
+3. git add -- 
+	To save, or commit, files into your Git repository you first need to add them to the staging area. Git has three areas, a working directory, a staging area and the repository itself. 
+
+Users move, otherwise referred to as promote, changes from the working directory, to a staging area before commiting them into the repository.
+
+One of the key approaches with Git is that commits are focused,small and frequent. The staging area helps to maintain the workflow by allowing you to only promote certain files at a time instead of all the changes in your working directory. 
+
+4. git commit --
+	
+	Once a file added to the staging area it needed to be commited to the repository. git commit -m command moves files from staging to the repository and records the time/data, author and a commit message that can be used to add additional context and reasoning to the changes such as a bug report number.
+
+Only changes added to the staging area will be commited, any files in the working directory that have not been staged will not be included.
+
+5. git ignore --
+
+	Sometimes there are particular files or directories you want to commit, such as local development configuration. To ignore these files you create a .gitignore file in the root of the repository.
+
+The .gitignore file allows you to define wildcards for the files you wish to ignore, for example *.tmp will ignore all files with the extension .tmp.
+
+Any files matching a defied wildcard will not be displayed in a git status output and be ignored when attempting the git add command.
+
+
+echo '*.tmp' > .gitignore
+git add .gitignore
+git commit -m "scgjkjsdf"
+git status
+
+
+
+6. git Diff --
+	This helps to compare changes in the working directory against a previously commited version. By default the command compares the working directory and the Head commit.
+
+7. git add --
+	In order to commit a change it must be staged using git add command.]
+
+Note : If you rename or delete files then you need to specify these files in the add command for them to be tracked.
+We can use git mv and git rm for git to perform the action and include update the staging area.
+
+8. git log --
+	It allows you to view the history of the repository and the commit log.
+Note: The format of the log is very flexible. 
+	
+

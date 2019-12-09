@@ -1,0 +1,11 @@
+learning about Siamese network .
+
+Learning in siamese networks can be done with triplet loss or contrastive loss. For learning by triplet loss a baseline vector (anchor image) is compared against a positive vector (truthy image) and a negative vector (falsy image). The negative vector will force learning in the network, while the positive vector will act like a regularizer. For learning by contrastive loss there must be a weight decay to regularize the weights, or some similar operation like a normalization.
+
+
+A distance metric for a loss function must have the following properties[4]
+
+Non-negativity: {\displaystyle \delta (x,y)\geq 0}{\displaystyle \delta (x,y)\geq 0}
+Identity of Discernible: {\displaystyle \delta (x,y)=0\iff x=y}{\displaystyle \delta (x,y)=0\iff x=y}
+Symmetry: {\displaystyle \delta (x,y)=\delta (y,x)}{\displaystyle \delta (x,y)=\delta (y,x)}
+Triangle inequality: {\displaystyle \delta (x,z)\leq \delta (x,y)+\delta (y,z)}{\displaystyle \delta (x,z)\leq \delta (x,y)+\delta (y,z)}
