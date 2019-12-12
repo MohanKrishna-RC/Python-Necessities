@@ -15,6 +15,36 @@ A cloud based registry service which allows you to link to code repositories, bu
 After pulling the Docker image, it will run the container and will show a Hello from Docker! message with some other information.
 
 
+The steps to be followed in writing app.py
+
+Import the Flask Package first, create Flask app, define a route and run the application in debug mode on localhost.
+
+
+Start creating Dockerfile. To do that, just create a file named Dockerfile in the same directory of the python file and put the commands necessary inside the file.
+
+It will inherit for the Python Docker image, install the Flask package, copy the source code of our application to the app folder, change the working directory to the app folder and set and ENTRYPOINT and a CMD.
+
+Now let's build the image from the Dockerfile using the -t flag, which means tag, and set a name (flask_app) and a tag (0.1).
+
+By typing docker images we can see that the image was succesfully created.
+Then let's run the container specifying the port that will be mapped (-p) and using the -d flag, which means detached, so that the terminal does not get struck. We must also pass the name and tag of the image as parameter (flask_app:0.1).
+
+The docker ps command will show the running container with some other information like the Container ID, the image that the container is using, the command the container is executing, the time it is created, the current status, the ports that were mapped and the name ( in the case  a randome name) of the container (we can also set name for the container by using the --name flag).
+
+
+Stopping and Removing containers.
+
+We can stop our container before deleting it. To do so, we just need to run "docker stop".
+
+Similar to the docker stop command, we can use the docker rm command passing the container name or ID as the parameter.
+
+
+Integration:
+
+Docker can be integrated into various infrastructure tools, like GCP, AWS, Microsoft Azure, Oracle Container cloud service and others.
+
+We can easily use Docker to apply Continuous Integration (CI) and Continuous Deployment (CD) practises, making our life easier and the deployment process faster.
+
 
 =======
 Docker is one implementation of container based visualization technologies.

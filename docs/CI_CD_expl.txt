@@ -1,0 +1,1 @@
+Continuous Integration vs continuous delivery vs continuous development
