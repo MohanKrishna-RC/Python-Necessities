@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Docker is a computer program that performs operating-system-level virtualization, also known as "containerization'.
 
 Docker is a popular tool to make it easier to build, deploy and run applications using containers. Containers allow us to package all the things that our application needs like such as libraries and other dependecies and ship it all as a single package. In this way, our application can be run on any machine and have same behavior.
@@ -15,3 +16,36 @@ After pulling the Docker image, it will run the container and will show a Hello 
 
 
 
+=======
+Docker is one implementation of container based visualization technologies.
+
+pre-Visualization world
+
+App --> Bins/libs --> Host os --> run app -->
+
+Huge host , resources wasted, deployment is often slow, paying for migrating our applications to servers from different Bendre.
+
+Hypervisor- based visualization.
+
+Cost effective
+Easy to scale
+
+Kernel resource duplication.
+
+Application Portability issue
+
+Container based Virtualization
+
+we have our server, install os systems
+
+
+Creating and Running Containers
+
+We just need to know that it is a "Hello World" web application in Flask which will run on localhost from inside a container.
+
+It will import the Flask package, create a Flask app, define a route and run the application in debug mode on local host.
+
+So, let's start creating our Dockerfile. To do that, just create a file named Dockerfile in the same directory of the python file.
+
+As 
+>>>>>>> bd136b964dea160a501c2b4096b3c5be68b8e906
