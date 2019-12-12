@@ -1,1 +1,29 @@
 Continuous Integration vs continuous delivery vs continuous development
+
+Continuous Integration:
+
+Developers practising continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so, we avoid the integration hell that ususally happens when people wait for release day to merge their changes into the release branch.
+
+CI puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.
+
+Continuous Delivery:
+
+It is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated the release process and we can deploy the application at any point of time by clicking on a button.
+
+With continuous delivery, we can decide to release any moment. To get the true benefits of continuous delivery, we should deploy to production as early as possible to make sure that we release small batches that are easy to troubleshoot in case of a problem.
+
+Continuous deployment:
+
+It goes one step further than continuous delivery. Every changes that passes all stages of our production pipeline is released to the customers. There's no human intervention, and only a failed test will prevent a new change to be deployed to production.
+
+It is an excellent way to accelerate the feedback loop with our customers and take pressure off the team as there isn't a Release Day anymore. Developers can focus on building software, and they see their work go live minutes after they've finished working on it.
+
+Relation between them..
+
+In a simple note CI is part of both delivery and deployment. And continuous deployment is like continuous delivery, except that releases happen automatically.
+
+One of the traditional cost associated with continuous integration is the installation and maintence of a CI server. But you can reduce significantly the cost of adopting these practises by using a cloud service like Bitbucket pipelines which adds automation to every Bitbucket repo. By simply adding a configuration file at the root of our repo we will be able to create a continuous deployment pipeline that gets executed for every new change pushed to the main branch.
+
+
+
+
