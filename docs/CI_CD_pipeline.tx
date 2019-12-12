@@ -1,0 +1,83 @@
+Steps to build a CI/CD pipeline.
+
+1.Finish the entire process logic.
+2. Add some automated tests for the program.
+3. Push your code to GitHub.
+4. Setup Travis CI to continuously run your automated tests.
+5. Setup Better code Hub to continuously check your code quality.
+6. Turn the Python program into a Web App.
+7. Create a Docker image for the web app.
+8. Push the Docker image to Docker Hub
+9. Deploy the Docker image to Heroku
+
+Writing a process logic :
+We need a small piece of software that will travel through all phases of the pipeline, from laptop to the cloud.
+
+Add Automated tests.
+
+Continuous delivery pipelines only makes sense when you have a significant amount of automated tests that prevents you from continuously shipping broke software. To get a proper set of unit-tests for our buzz generator create a new directory called "tests" in the root of our project directory and save the snippet below to a new file in the 'tests' directory.
+
+Pushing the code to GitHub.
+Create a .gitignore file inside the directory and push it to git
+
+Connect to Travis CI to run the tests on every commit.
+
+Travis CI is a hosted service for Continuous Integration work. It's free for public GitHub repositories.
+
+Enabling Travis CI to start a build at each Push and Pull Request for our repositories is as easy flipping the switch in front of your GitHub ccid-buzz repos.
+
+The final step in activating Travis CI is to add a ".travis.yaml" file in the root of project directory. 
+Add the file to Git, then commit and Push our changes.
+
+Add Better Code Hub to the Pipeline..
+
+We have a well oiled pipeline that continuously checks the functionality of our code with automated tests, the temptation is strong to focus on functionality and forget about quality. Better Code Hub is a hosted platform that checks the quality of our code according to the 10 guideline for maintainable, future proof code.
+Better code Hub is a watchdog that continuously monitors our development work ( literally every push to GitHub) and notifies you when the quality is at risk.
+
+Better Code Hub is, like Travis CI, a service that seamlessly integrates with GitHub.
+
+Turn the buzz generator into a simple web app.
+ 
+So far we have a continuous integration pipeline that check for functionality and quality at this point. 
+Next step is to continuously deploy our software whenever all tests pass.
+
+Since we deploy the software to Heroku as a web app, we first need to write a little Python Flask wrapper around our buzz generator to make the program respond to HTTP requests and output HTML. Add the code in a file called 'app.py' in the root of the project directory.
+
+Containerize your web app with docker.
+
+We'll use Docker to create a single self-contained, deployable unit of our web app. For a simple Python Flask app this may look like a lot of overhead but deploying different versions of our code base as a small, self contained unit has a lot of benefits when our system grows over time.
+
+Assuming you have Docker up and running, adding the new file called 'Dockerfile' in the root of our project directory.
+
+We should be able to build an image of this Docker configuration and launch it.
+
+Deploy to Docker Hub.
+
+Deploying our containers to a central "Docker image registry", such as Docker Hub makes it much easier to share your containers in different environments or to go back to a previous version.
+
+The scripts will be called by Travis CI at the end of each pipeline build and will create a new deployable Docker Image for the pipeline build. The script requires 3 environment variables that you can set under the settings 'view'.
+
+To have Travis CI deploy you Docker image to Docker Hub for each code push to our GitHub repository, modify '.travis.yml' file.
+
+After commiting and pushing these changes ( and waiting for Travis CI to complete the full pipeline) we should be able to launch our Docker Image straight from Docker Hub.
+
+Deploy to Heroku :
+
+Heroku is a cloud platform for hosting small and scalable web applications.
+
+Note : Heroku container:push web command, pushes the same container to the Heroku platform as you've pushed to the Docker Hub repository.
+
+To automate the process of deploying each build of the master branch of our project, add the following to a file called 'deploy_heroku.sh' in the '.travis'
+
+
+CI/CD FTW :
+
+
+
+
+
+We're using "Jenkins" instead of Travis CI,'GCR' (google cloud repository) instead of Docker Hub, 'GCP' instead of Heroku, and to maintain all the available connections we're using 'Kubeflow'.
+
+
+
+
