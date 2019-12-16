@@ -84,8 +84,7 @@ In case you want to make topic modelling we use Singular Value Decomposition (SV
 Topic modelling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Topic modelling is a frequently used text-mining tool for the discovery of hidden semantic structures in a text body.
 
 
-
-
-
+Note:
+Performance is increased if the number of hidden layer neurons is also increased when using the MLP classifier and if the nearest neighbor number is also increased when using the KNN. The ability to adjust the performance of the k-NN classifier is very limited here. But an adjustable number of hidden layers and adjustable MLP connection weights provides a greater oppurtunity to refine the decision regions.
 
 
