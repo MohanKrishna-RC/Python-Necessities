@@ -77,5 +77,8 @@ It will import the Flask package, create a Flask app, define a route and run the
 
 So, let's start creating our Dockerfile. To do that, just create a file named Dockerfile in the same directory of the python file.
 
-As 
->>>>>>> bd136b964dea160a501c2b4096b3c5be68b8e906
+#########################################################################
+
+
+
+

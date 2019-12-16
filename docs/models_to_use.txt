@@ -1,0 +1,91 @@
+Classification :
+
+If we have a classification problem, "which is predicting the class of a given input"
+
+keep in mind how many classes you'll classify your inputs to, as some of the classifiers don't support multiclass prediction, they only support 2 class prediction.
+
+--- Slow but accurate.
+
+1. Non-linear SVM
+2. Random Forest
+3. Neural Network ( needs a lot of data points)
+4. Gradient Boosting Tree ( similar to Random Forest, but easier to overfit)
+
+--- Fast.
+
+1. Explainable models : Decision Trees and Logistic Regression
+2. Non-explainable models: Linear SVM and Naive Bayes
+
+
+Note: SVM Kernale uses..
+
+1. Use the linear Kernel when the number of features is larger than the number of observations.
+
+2. Use the Gaussian Kernel when the number of observations is larger than the number of features.
+
+3. If the number of observations is larger than 50k, speed could be an issue when the Gaussian kernel; hence, one might want to use the linear kernel.
+
+Regression :
+
+If we have a Regression problem " which is predicting a continuous value like predicting prices of a house given the features of the house like size, number of rooms, etc".
+
+-- Accurate but slow.
+1. Random Forest
+2. Neural network ( needs a lot of data points)
+3. Gradient Boosting Tree (similar to Random Forest, but easier to overfit)
+
+--- Fast.
+
+1. Decision Tree
+2. Linera Regression
+
+
+Note :
+
+Predicting a category -- Classification
+Predicting a quantity -- Regression
+
+Labelled data -- Classification Block
+Unlabelled data -- Clustering Block
+
+For just looking the data -- Dimensionality reduction
+
+
+Clustering :
+
+If we have a clustering problem, "Which is dividing the data into k groups according to their features such that objects in the same group have some degree of similarity"
+
+Heirarchial clustering: (also called heirarchial cluster analysis or HCA) is a method of cluster analysis which seeks to build a heirarchy of clusters. Strategies for heirarchial clustering generally fall into two types.
+
+
+Agglomerative : This is a "bottom-up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the heirarchy.
+
+
+Divisice : This is a "top-down" approach : all observations start in one cluster, and splits are performed recursively as one moves down the heirarchy.
+
+Nonheirarchial Clustering:
+
+1. DBSCAN ( we don't need to specify the value of k, which is the number of clusters)
+
+2. k-means
+3. Gaussian Mixture model
+
+In case we are clustering a categorical data use,
+k-modes.
+
+Dimensionality Reduction :
+
+Use the Principal Component Analysis (PCA)
+
+PCA can be thought of as fitting an n-dimensional ellipsoid to the data, where each axis of the ellipsoid represents a principal component. If some axis of the ellipsoid is small, then the variance along that axis is also small, and by omitting that axis and its corresponding principal component from our representation of the dataset, we lose only a commensurately small amount of information.
+
+In case you want to make topic modelling we use Singular Value Decomposition (SVD) or Latent Dirichlet Analysis (LDA), and use LDA in case of probabilistic topic modelling.
+
+Topic modelling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Topic modelling is a frequently used text-mining tool for the discovery of hidden semantic structures in a text body.
+
+
+
+
+
+
+
