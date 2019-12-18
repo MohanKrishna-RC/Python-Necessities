@@ -1,6 +1,6 @@
 import numpy as np
 from time import process_time 
-
+import os
 py_list = [i for i in range(10000)]
 
 start = process_time()
