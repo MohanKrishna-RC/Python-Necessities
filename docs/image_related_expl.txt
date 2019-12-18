@@ -1,0 +1,5 @@
+A raster is a grid of x and y coordinates on a display space. (And for three dimensional images, a z coordinate.) A raster image file identifies which of these coordinates to illuminate in monochrome or cool values.
+
+In a image when only x and y coordinates of an Roi is given, calculate the size of the image.
+
+If we're trying to calculate the number of rows and columns in a raster.
