@@ -1,0 +1,16 @@
+Decorators are good to encapsulate lot of implementation details
+and leaving out very simply interface.
+
+In python, functions are first-class objects. That just means that functions are values like numbers, strings and lists.
+
+Functions can take other functions as arguments.
+
+Functions are nothing special,so they can be passed as arguments to other functions.
+
+Functions can take variable number of arguments.
+
+In python, it is possible for a function to take variable number of arguments.
+
+Decorator is just a syntactic sugar.
+
+The @decorator syntax is a shorthand for something really simple.
