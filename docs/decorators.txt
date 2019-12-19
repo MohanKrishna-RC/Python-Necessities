@@ -14,3 +14,5 @@ In python, it is possible for a function to take variable number of arguments.
 Decorator is just a syntactic sugar.
 
 The @decorator syntax is a shorthand for something really simple.
+
+
