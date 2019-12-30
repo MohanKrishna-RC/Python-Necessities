@@ -1,0 +1,7 @@
+Python's performance is that there's often a tradeoff between being a versatile, dynamic language, versus performance. We can't have everything. One of the best ways developers have dealt with the performance of Python is to use its alternative implementations. Python is a interpreted language -- however, at runtime it's compiled into bytecode that runs on a virtual machine. Different compilers can be used for different purposes to give us a performance edge.
+
+---Python generators..
+
+Generators are iterators, but we can only iterate over them once. It's because they do not store all the values in memory, they generate the values in the fly. We use them by iterating over them, either with a 'for' loop or by passing them to any function or construct that iterates. Most of the times generators are implemented as functions. However, they do not return a value, they yield it.
+
+

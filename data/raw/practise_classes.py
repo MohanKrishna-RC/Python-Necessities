@@ -15,6 +15,7 @@ in python that simply. So we can define a method
 add to make that easy for us """
 
 class Polynomial:
+    # __init__ is known as the constructor
     def __init__(self,*coeffs):
         self.coeffs = coeffs
 
@@ -55,4 +56,8 @@ that thing itself """
 # init x --> __init__
 # reper(x) --> __repr__
 # x() --> __call__
+
+
+
+############# Python Inheritence ################
 
