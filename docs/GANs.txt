@@ -1,0 +1,5 @@
+General Adversial networks, or GANs, are some of the most potent tools a machine learning practitioner in use.
+
+GANs are capable of doing everything from super-resolution in images, to image translation, to facial manipulation, to medicine creation etc.
+
+
