@@ -9,4 +9,15 @@ Visualisation of specific logged data has following benefits:
 
 There are number of ways we can visualize raw data. There are a number of libraries in the python language that can help in plotting graphs. 
 
+ELT stack:
 
+The ELK stack is a collection of three open source softwares that helps in providing realtime insights about data that can be either structured or unstructured. One can search and analyse data using its tools with extreme ease and efficiently.
+
+ElasticSearch : 
+It is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases. As the heart of the Elastic Stack, it centrally stores our data so we can discover the expected and uncover the unexpected. Elasticsearch lets us perform and combine many types of searches structured, unstructured, geo,metric etc. It is build on java programming language, which enables Elasticsearch to run on different platforms. It enables users to explore very large amount of data at very high speed.
+
+Logstash: It is an open source, server-side data processing pipeline that ingests data from a multiple of sources simulaneously, transforms it, and then sends it to our favourite "stash" (like Elasticsearch"). Data is often scattered or siloed across many systems in many formats. Logstash supports a variety of inputs that pull in events from a multitude of common sources, all at the same time. Easily ingest from the logs, metrics, web applications, data stores, and various AWS services, all in continuous, streaming fashion. Logstash has a pluggable framework featuring over 200 plugins. Mix, match, and orchestrate different inputs, filters, and outputs to work in pipeline harmony.
+
+Kibana : It is an open source analytics and visualization platform designed to work with Elasticsearch. We can use Kibana to search, view, and interact with data stored in Elasticsearch indices. We can easily perform advanced data analytics and visualize our data in a variety of charts, tables, and maps. Kibana makes it easy to understand large volumes of data. Its simple, browser-based interface enables us to quickly create and share dynamic dashboards that display changes to Elasticsearch queries in real time.
+
+To get a better picture of the workflow of how the three softwares interact with each other.
