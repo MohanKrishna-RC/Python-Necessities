@@ -21,3 +21,10 @@ Logstash: It is an open source, server-side data processing pipeline that ingest
 Kibana : It is an open source analytics and visualization platform designed to work with Elasticsearch. We can use Kibana to search, view, and interact with data stored in Elasticsearch indices. We can easily perform advanced data analytics and visualize our data in a variety of charts, tables, and maps. Kibana makes it easy to understand large volumes of data. Its simple, browser-based interface enables us to quickly create and share dynamic dashboards that display changes to Elasticsearch queries in real time.
 
 To get a better picture of the workflow of how the three softwares interact with each other.
+
+
+Logging in python:
+
+Here, I chose to explain the implementation of logging in python because it helps the most used language for projects involving communication between multiple machine and internet of things.
+
+
