@@ -1,0 +1,9 @@
+Attention mechanisms are essentially a way to non-uniformly weight the contributions of input feature vectors so as to optimize the process of learning some target. Sure it is also possible that some target requires equal attention paid to all inputs( i.e uniform distribution of weights), but the term attention connotes a selection process in which certain inputs are particularly more important than others.
+
+Attention mechanisms are a way to non-uniformly weight the contributions of various input features so as to optimize the learning of some target.
+
+One way to do this is to linearly transform all the inputs at a given level. The transformed inputs are called keys. Then the current input which we are looking to interpret is also transformed into something called a query. The linear transformation is into a space such that similarity between keys and queries carries information about the relevance of those keys during the translation of a given query.
+
+We determine similarity between keys and queries and use that similarity as weights for a linear convex combination of values. The values are the features at the level of the query (including itself). This summation is called a context vector and is fed into the corresponding cell in the next layer in the model.
+
+

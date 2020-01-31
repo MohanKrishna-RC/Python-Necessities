@@ -1,0 +1,12 @@
+Logging enables the developers to understand what code is actually doing and how the work-flow is. A large part of software developers' lives is monitoring, troubleshooting and debugging. Logging makes this a much easier and smoother process.
+
+Visualisation of specific logged data has following benefits:
+
+1. Monitor the operations of the system remotely.
+2. Communicate information clearly and efficiently via stastical graphics, plots and information graphics.
+3. Extract knowledge from the data visualized in the form of different graphs.
+4. Take necessary actions to better the system.
+
+There are number of ways we can visualize raw data. There are a number of libraries in the python language that can help in plotting graphs. 
+
+
