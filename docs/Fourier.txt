@@ -11,4 +11,12 @@ Given the sum of the two signals, can we recover the original signals.
 That's what a Fourier transform does. It takes up a signal and decomposes it to the frequencies that made it up.
 
 
+Fourier transform does is It kind of moves us from the time domain to the frequency domain.
+
+Inverse frequency transform (IFT) helps us to go back from the frequency domain to the time domain.
+
+Any continuous signal in the time domain can be represented uniquely and unambigiously by an infinite series of sinusoids.
+
+The continuous Fourier transform converts a time-domain signal of infinite duration into a continuous spectrum composed of an infinite number of sinusoids. We deal with signals that are discretely sampled, usually classical Fourier transform algorithm can be expressed as a Discrete Fourier transform (DFT), which converts a finite sequence of equally-spaced samples of a function into a same-length sequence of equally-spaced samples of the discrete-time Fourier transform.
+
 
