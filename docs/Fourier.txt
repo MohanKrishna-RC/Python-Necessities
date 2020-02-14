@@ -1,0 +1,14 @@
+The Fourier transform is a way of splitting something up into a bunch of sine waves.
+
+The Fourier Transform is a technique that transforms a signal into its constituent components and frequencies.
+
+Fourier transform is widely used not only in signal (radio, acoustic etc) processing but also in image analysis eg edge detection, image filering, image reconstruction, and image compression. 
+eg. Fourier transform of transmission electron microscopy images helps to check the periodicity of the samples.
+Periodicity - means pattern. Fourier transform of your data can expand accessible information about the analyzed sample.
+
+Given the sum of the two signals, can we recover the original signals.
+
+That's what a Fourier transform does. It takes up a signal and decomposes it to the frequencies that made it up.
+
+
+
