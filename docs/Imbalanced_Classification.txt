@@ -18,6 +18,36 @@ Misclassifying an example from the majority class as as example from the minorit
 
 This is referred to as cost sensitivity of misclassification errors and is a second functional challenge of imbalanced classification.
 
+The two aspects, the "Skewed class distribution and cost sensitivity, are typically referenced when describing the difficulty of imbalanced classification.
+
+Class imbalance was widely acknowledged as a complicating factor for classification. However, some argue that the imbalance ratio is not the only cause for performance degradation in learning from imbalanced data.
+
+
+Three of the most common problems that affect the performance of the model:
+
+1. Dataset Size
+2. Label noise
+3. Data Distribution.
+
+It is important to not only acknowledge these properties but to also specifically develop an intution for their impact. This will allow us to select and develop techniques to address them in our own predictive modelling projects.
+
+Understanding these data intrinsic characteristics, as well as their relationship with class imbalance, is crucial for applying existing and developing new techniques to deal with imbalance data.
+
+Compounding effect of Dataset Size:
+
+A problem that often arises in classification is the small number of training instances. This issue, often reported as data rarity or lack of data, is related to the "lack of density" or "insufficiency of information."
+
+For a modest classification task with a balanced class distribution, we might be satisfied with thousands or tens of thousands of examples in order to develop, evaluate, and select a model.
+
+
+A balanced binary classification with 10000 examples would have 5000 examples of each class. An imbalanced dataset with a 1:100 distribution with the same number of examples would only have 100 examples of the minority class.
+
+As such, the size of the dataset dramatically impacts the imbalanced classification task, and datasets that are thought large in general are, in fact, probably not large enough when working with an imbalanced classification problem.
+
+"Without a sufficient large training set, a classifier may not generalize characteristics of the data. Furthermore, the classifier could also overfit the training data, with a poor performance in out-of-shape test instances."
+
+
+
 
 
 

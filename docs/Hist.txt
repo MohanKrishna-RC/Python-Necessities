@@ -1,0 +1,9 @@
+The core purpose to a histogram is to understand the distibution of a given dataset.
+
+A histogram represents the number of occurrences on the y-axis of different values of a variable, found on the x-axis.
+
+The Central limit theorm states the distribution of sample means should be approimately normal.
+
+The key takeaway here is that even if the input variables are not normally distributed, the sampling distribution will approximate the standard normal distribution.
+
+
