@@ -1,0 +1,8 @@
+Imbalanced classification is primarily challenging as a predictive modelling task because of the severly skewed class distribution.
+
+This is the root cause for poor performance with traditional machine learning models and evaluation metrics that assume a balanced class distribution.
+
+There are additional properties of a classification dataset that are not only challenging for predictive modelling but also increase or compound the difficulty when modelling imbalanced datasets.
+
+
+
