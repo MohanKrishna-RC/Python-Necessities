@@ -5,4 +5,19 @@ This is the root cause for poor performance with traditional machine learning mo
 There are additional properties of a classification dataset that are not only challenging for predictive modelling but also increase or compound the difficulty when modelling imbalanced datasets.
 
 
+Imbalanced classification is specially hard because of the severly skewed class distribution and the unequal misclassification costs.
+
+The difficulty of imbalanced classification is compounded by properties such as dataset size, label noise, and data distribution.
+
+How to develop an intution for the compounding effects on modelling difficulty posed by different dataset properties.
+
+
+It is common for the majority class to represent a normal case in the domain, whereas the minority class represents an abnormal case, such as fault, fraud, outlier, anomaly, disease state, etc. As such, the interpretation of misclassification errors may differ across the classes.
+
+Misclassifying an example from the majority class as as example from the minority class called a false positive is often not desired, but less critical than classifying an example from the minority class as belonging to the majority class, a so-called false negative.
+
+This is referred to as cost sensitivity of misclassification errors and is a second functional challenge of imbalanced classification.
+
+
+
 
