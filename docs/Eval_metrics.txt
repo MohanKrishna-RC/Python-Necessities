@@ -1,0 +1,36 @@
+Chosing the Right Evaluation metric.
+
+Confusion Matrix:
+
+Confusion or Error Matrix is a table that describes the performance of a supervised machine learning model on the testing data, where the true values are unknown. It is called confusion matrix because it makes it easy to spot where our systen is confusing two classes.
+
+The ideal scenario that we all want is that the model should give 0 False Positives and 0 False Negatives.
+
+The Confusion matrix in itself is not a performance measure as such, but almost all of the performance are based on Confusion Matrix and the numbers inside it.
+
+
+Minimizing the False Negatives and False Positives is very important in benchmarking data, so we have to minimize them accordingly based on the use case scenario.
+
+In cancer situation we have to detect every single case and it is better to detect all correct, so we have to minimize the false negatives as much as possible.
+
+In email spam situation, it is important to identify the false positive cases and reduce them. Suppose the Model calssifies that important email that you are desperately waiting for, as Spam(case of False Positive). So in case of Spam email classification, minimizing false positives is more important than False Negatives.
+
+
+Accuracy :
+
+Accuracy is a good measure when the target variable classes in the data are nearly balanced.
+
+Precision Vs Recall :
+
+It is clear that recall gives us information about a classifier's performance with respect to false negatives( how many did we miss), while precision gives us information about its performance with respect to false positives ( how many did we caught).
+
+Precision is about being precise. So even if we managed to capture only one cancer case, and we captured it correctly, then we are 100% precise.
+
+Recall is not so much about capturing cases correctly but more about capturing all cases that have "cancer" with the answer as "cancer". So if we simply always say every case as "cancer", we have 100% recall.
+
+
+So basically if we want to focus more on minimizing False Negatives, we would want our Recall to be as close to 100% as positive without precision being too bad and if we want to focus on minimizing False Positives, then our focus should be to make precision as close to 100% as possible.
+
+
+
+
