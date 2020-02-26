@@ -1,0 +1,111 @@
+XML stands for eXtensible Markup Language.
+XML was designed to store and transport data.
+XML was designed to be self-descriptive
+XML was designed to be both human and machine readable.
+
+***** XML doesn't do anything. XML is just information wrapped in tags. *******
+
+XML was designed to carry data -with focus on what data is
+XML tags are not predefined like HTML tags are
+
+XML is often used for distributing data over the internet.
+
+XML simplifies Things :
+
+It simplifies data sharing
+It simplifies data transport
+It simplifies platform changes
+It simplifies data availabilty
+
+Exchanging data between incompatible systems is a time consuming task for web developers. Large amounts of data must be converted, and incompatible data is often lost.
+
+XML stores data in plain text format. This provides a software and hardware independent way of storing, transporting and sharing data.
+
+
+
+
+
+
+
+
+
+
+xml.etree.ElementTree (ET in short)
+
+The Element type is a flexible container object, designed to store hierarchial data structures in memory. The type can be described as a cross between a list and a dictionary.
+
+Each element has a number of properties associated with it:
+
+1. A tag which is a string identifying what kind of data this element represents (the element type, in other words).
+
+2. A number of attributes, stored in a python dictionary.
+
+3. A text string.
+
+4. An optional tail string.
+
+5. A number of child elements, stored in a Python sequence.
+
+To create an element instance, use the Element constructor or the Subelement() factory function.
+
+
+The ElementTree class can be used to wrap an element structure, and convert it from and to XML.
+
+XML is an inherently heirarchial data format, and the most natural way to represent it is with a tree. ET has two classes for this purpose - ElementTree represnts the whole XML document as a tree, and Element represents a single node in this tree. Interaction with the whole document (reading and writing to/from files) are usually done on the ElementTree level. Interactions with a single XML element and its sub-elements are done on the Element level.
+
+Element classes:
+
+Element class. This class defines the Element interface, and provides a reference implementation of this interface.
+
+The element name, attribute names, and attribute values can be either bytestrings or Unicode strings. tag is the element name. attrib is an optional dictionary, containing element attributes. extra contains additional attributes, given as keyword arguments.
+
+ElementTree Objects:
+
+ElementTree wrapper class. This class represents an entire element hierarchy, and adds some extra support for serialization to and from standatrd XML.
+
+element is the root element. The tree is initialized with the contents of the XML	file is given.
+
+
+
+An XML document with correct syntax is called "Well Formed"
+
+The syntax rules were described in the previous chapters:
+
+XML document must have a root element.
+XML elements must have a closing tag
+XML tags are case sensitive
+XML elements must be properly nested
+XML attribute values must be quoted
+
+
+Errors in XML documents will stop our XML applications.
+The W3C XML specification states that a program should stop processing an XML document if it finds an error. The reason is that XML software should be small, fast and compatible.
+
+HTML browsers are allowed to display HTML documents with errors (like missing end tags)
+
+Valid XML documents:
+
+A "well formed" XML document is not the same as a "valid" XML document.
+A "valid" XML document must be well formed. In addition, it must conform to a document type definition.
+
+A document type definition define the rules and the legal elements and attributes for an XML document.
+
+
+DTD stands for Document Type Definition.
+
+A DTD defines the structure and the legal elements and attributes of an XML document.
+
+Valid XML documents.
+
+A "valid" XML document is "Well formed", as well as it conforms to the rules of a DTD.
+
+when experimenting with XML, or when we are working with small xml files, creating DTDs may be a waste of time.
+
+If we develop applications, wait until the specification is stable before we add a DTD. Otherwise, our software might stop working becuase of validation errors.
+
+
+
+
+
+
+

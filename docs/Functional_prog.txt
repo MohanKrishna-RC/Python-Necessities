@@ -1,0 +1,32 @@
+Functional programming is a programming paragigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data.
+
+FP relies on functions, and everything is done using functions. FP focuses on defining what to do, instead of performing some action. The functions of this paradigm are treated as first-class functions. This means functions are treated like any other objects, and we can assign them to variables or pass them into other functions.
+
+The data used in functional programming must be immutable, i.e should never change. That means if we need to modify a data in a list, we need to create a new list with updated values rather than manipulating the existing one.
+
+
+The programs written in FP should be stateless. A stateless function has no knowledge about its past. Functional programs should carry out every tasl as if they are performing it for the first time. Simply put, the functions are only dependent on the data passed to them as arguments and never on the outside data.
+
+Laziness is another property of FP wherein we don't compute things that we don't have to. Work is only done on demand.
+
+
+The map, filter, and reduce functions simplify the job of working with lists. When used along with lambda expressions they help to make our lives easier by accomplishing a lot in a single line of code.
+
+
+The Map function applies a function to every item of iterable, yielding the results. When used with lists, Map transforms a given list into a new list by applying the function to all the items in an input_list.
+
+The map function takes in two arguments. The first is a fucntion, and the second is our list, tuple, or any other iterable object. Here, the map function applies the volume function to each element in the list.
+
+An important thing is that the output of the map function is not a list but a map object, which is an iterator over the results. We can, however, turn this into a list by passing the map to the list constructor.
+
+
+
+The filter function constructs an iterator from those elements of iterable for which function returns true. This means filter function is used to select certain pieces of data from a list, tuple, or other collection of data, hence the name.
+
+The reduce function is a bit unusual. The reduce function transforms a given list into a single value by applying a function cummulatively to the items of sequence, from left to right.
+
+
+List comprehensions are Python's way of implementing the notation for sets as used in mathematics.
+
+
+

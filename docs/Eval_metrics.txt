@@ -11,7 +11,7 @@ The Confusion matrix in itself is not a performance measure as such, but almost 
 
 Minimizing the False Negatives and False Positives is very important in benchmarking data, so we have to minimize them accordingly based on the use case scenario.
 
-In cancer situation we have to detect every single case and it is better to detect all correct, so we have to minimize the false negatives as much as possible.
+In cancer situation we have to detect every single case and it is better to detect all correct, so we have to minimize the false negatives as much as possible.ss
 
 In email spam situation, it is important to identify the false positive cases and reduce them. Suppose the Model calssifies that important email that you are desperately waiting for, as Spam(case of False Positive). So in case of Spam email classification, minimizing false positives is more important than False Negatives.
 
