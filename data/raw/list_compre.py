@@ -57,9 +57,18 @@ class _nested_list_compr:
         What we want is a list that consists of names that are longer than one letter and have only the first letter capitalized.
         To accomplish such a task, we turn to set comprehensions.
         """
-        
+
         names = [ 'Arnold', 'BILL', 'alice', 'arnold', 'MARY', 'J', 'BIll' ,'maRy']
         {name.capitalize() for name in names if len(name) > 1}
+    
+    def _dict_compre(self):
+        """
+        The dictionary char_dict consists of a mix of upper and lowercase letters.
+        We want to count the total number of occurrence of the letters irrespective of their case.
+        """
+        char_dict = {'A' : 4,'z': 2, 'D' : 8, 'a': 5, 'Z' : 10 }
+        return { k.lower() : char_dict.get(k.lower(), 0) + char_dict.get(k.upper(), 0) for k in char_dict.keys()}
+        
 
 cl = _triplets()
 py = cl._cube_triplets()
@@ -73,7 +82,7 @@ sp = col._swap_names()
 
 nl = _nested_list_compr()
 mx = nl._create_matrix()
-
-print(mx)
+mp = nl._dict_compre()
+print(mp)
 
 

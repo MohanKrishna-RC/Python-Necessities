@@ -29,4 +29,8 @@ The reduce function is a bit unusual. The reduce function transforms a given lis
 List comprehensions are Python's way of implementing the notation for sets as used in mathematics.
 
 
+List comprehensions are to lists, as generator expressions are to generators. Generator functions output values one-at-a-time from a given sequence instead of giving them all at once.
+
+
+
 
