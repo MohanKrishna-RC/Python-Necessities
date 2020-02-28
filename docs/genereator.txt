@@ -4,4 +4,25 @@ Python's performance is that there's often a tradeoff between being a versatile,
 
 Generators are iterators, but we can only iterate over them once. It's because they do not store all the values in memory, they generate the values in the fly. We use them by iterating over them, either with a 'for' loop or by passing them to any function or construct that iterates. Most of the times generators are implemented as functions. However, they do not return a value, they yield it.
 
+Iteration is the repetition of some kind of process over and over again.
+Often we iterate over lists in python, but we can also iterate over strings and dictionaries.
 
+Iterables support iterator Protocol. The technical definition for the Iterator Protocol. It can be thought of as a set of requirements to be used for a "for" loop.  That is, lists, strings and dictionaries all follow the iterator protocol.
+Conversely, objects that do not follow the protocol cannot be used in a for loop.
+
+Iteration is the idea of repeating some process over a sequence of items. In python, iteration is usually related to the for loop.
+
+An iterable is an object that supports iteration.
+
+To be an iterable, it must describe to a for loop two things:
+	1. What item comes next in the iteration.
+	2. When should the loop stop iteration.
+
+Generators are iterable.
+
+``````````````````````````````````````````````````````````````````````````
+
+The real life generator we can think of is backup generator.
+
+generates --- electricity
+	
