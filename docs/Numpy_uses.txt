@@ -1,0 +1,34 @@
+Reasons behind the fast speed of Numpy..
+
+1. Numpy is able to divide a task into multiple subtasks and process it parallely.
+2. Numpy array is a collection of similar data types which are densely pa cked in memory, where python list might have different datatypes.
+3. Numpy functions are implemented in C. Which again makes it faster comapared to python lists.
+
+---Adding a Scalar
+
+When adding a scalar to an array of 10k elements, Numpy is around 5 times faster than Python list. 
+
+As we move to a large array size. Numpy array gets around 120 times faster.
+As the array size is increasing, Numpy is able to execute more parallel operations.Thus it makes faster than Python lists.
+
+---Dot Product.
+
+Numpy is around 10 times faster on the array of size 10K.
+
+Dot product is even faster, which is around 140 times fast as we move to the large array size.
+
+---Concatenation..
+
+Concatention speed is almost similar. Even for the different array sizes time taken in the concatenation is almost similar.
+
+Python list can be extended by attaching one or most list to it. But we cannot extend an existing Numpy array. When we concatenate two Numpy array, one new resulting array is initalized. So the concatenating operation is relatively faster in the python list.
+
+--Deletion..
+
+Even for the deletion operation, Numpy array is faster. As the array size increases, Numpy array is around 30 times faster than Python list.
+
+Because the Numpy array is densely packed in memory due to its homogeneous type. Thus it is faster to free that memory.
+
+So overall task executed in Numpy is around 5 to 100 times faster than standard python list, which is significant leap in terms of speed.
+
+
