@@ -1,0 +1,33 @@
+A function is a block of code that contains one or more Python statements and used for performing a specific task.
+
+Uses of Function.
+
+1. Code re-usability: Lets say we are writing an application in Python where we need to perform a specific task in several places of our code, assume that we need to write 10 lines of code to do that specific task. It would be better to write those 10 lines of code in a function and just call the function wherever needed, because writing those 10 lines every time you perform that task is tedious, it would make your code lengthy, less-readable and increase the chances of human errors.
+
+2. Improves Readability: By using functions for frequent tasks you make your code structured and readable. It would be easier for anyone to look at the code and be able to understand the flow and purpose of the code.
+
+3. Avoid redundancy: When you no longer repeat the same lines of code throughout the code and use functions in places of those, you actually avoiding the redundancy that you may have created by not using functions.
+
+def function_name(function_parameters):
+	function_body # Set of Python statements
+        return # optional return statement
+Calling the function:
+
+# when function doesn't return anything
+function_name(parameters)
+
+OR
+
+# when function returns something
+# variable is to store the returned value
+
+variable = function_name(parameters)
+
+Types of functions
+There are two types of functions in Python:
+1. Built-in functions: These functions are predefined in Python and we need not to declare these functions before calling them. We can freely invoke them as and when needed.
+2. User defined functions: The functions which we create in our code are user-defined functions. The add() function that we have created in above examples is a user-defined function.
+
+
+Definitions to remember: An argument is a value you pass to a function when calling it. 
+A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.

@@ -1,0 +1,10 @@
+Select avg(salary) as MaxTotal
+From EmployeeDepartment(TableName)
+GROUP BY employee_name
+ORDER BY MaxTotal desc
+LIMIT 1
+
+Select sum(salary), min(salary), max(salary)
+From TableName
+
+Select max(avg(salary)) from (select worker_id, avg(salary) from workers(TableName) group by worker_id)

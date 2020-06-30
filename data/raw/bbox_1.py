@@ -1,7 +1,7 @@
 import os, cv2, glob, csv
 import pandas as pd
 import numpy as np
-csv = "/home/mohan/Downloads/1c865c19-c7c9-4844-b3a9-d2aae8b7417a_vmd_features_570220fc-b35a-47e1-b6d6-92c5747d83cb_entity_2020012019242245_quality_paramters__encoder_csv_Sportcast_1788.csv"
+csv = "/home/mohan/Downloads/54579748-d421-443d-9ba6-fba32fdd262f_vmd_features_962a09fa-16a3-45bc-b9b2-f9c3aa1cd90e_face_recognition_2020032710522398_quality_paramters__encoder_csv_Sportcast_1758.csv"
 
 df = pd.read_csv(csv)
 print(df.head())
