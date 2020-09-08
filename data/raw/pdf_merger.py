@@ -20,4 +20,4 @@ def merge_pdf(path,output_filename):
     
 path = ""
 output_filename = ""
-merge(path,output_filename)
+merge_pdf(path,output_filename)
