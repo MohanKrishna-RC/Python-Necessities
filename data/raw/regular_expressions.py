@@ -51,3 +51,19 @@ print(x5)
 #Return an empty list if no match was found
 x6 = re.search("sun",txt)
 print(x6)
+
+""" Examples """
+
+import re
+
+def text_match(text):
+    patterns = '^[a-z]+_[a-z]+$'
+    if re.search(patterns,text):
+        return 'Found Match'
+    
+    else:
+        return 'Match Not found'
+
+print(text_match('cab_cjsgfj'))
+print(text_match('cag_Ahsjsfhyd'))
+print(text_match('Abdf_dfdfd'))
