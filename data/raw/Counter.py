@@ -76,11 +76,11 @@ iteration using reverse().
 
 d ={'banana': 3, 'apple': 4, 'pear': 1, 'orange': 2}
 # dictionary sorted by key
-OrderedDict(sorted(d.items(), key=lambdat: t[0]))
+OrderedDict(sorted(d.items(), key=lambda t: t[0]))
 # dictionary sorted by value
-OrderedDict(sorted(d.items(), key=lambdat: t[1]))
+OrderedDict(sorted(d.items(), key=lambda t: t[1]))
 # dictionary sorted by length of the key string
-OrderedDict(sorted(d.items(), key=lambdat: len(t[0])))
+OrderedDict(sorted(d.items(), key=lambda t: len(t[0])))
 """
 The  new  sorted  dictionaries  maintain  their  sort  order  when  entries  are  deleted.  
 But when  new  keys  are  added,  the  keys  are  appended  to  the  end  and  the  sort  is  not maintained.
