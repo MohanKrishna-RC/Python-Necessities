@@ -46,5 +46,5 @@ def get_joke():
     else:
         print("I'm sorry. I could not find any jokes on {}.".format(search_term))
 
-
-get_joke()
+if __name__=="__main__":
+    get_joke()
