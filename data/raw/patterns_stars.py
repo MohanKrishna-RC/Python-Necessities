@@ -68,6 +68,20 @@ def diagonal(num):
             # print(j)
             print("*",end=" ")
         print("\r")
+# Arrow patterns
+def arrow(n):
+    for i in range(n):
+        if i==n-1:
+            print((2*n)*"*",end="")
+            print((i+1)*"*")
+        else:
+            print((2*n)*" ",end="")
+            print((i+1)*"*")
+    
+    for j in range(n-1,0,-1):
+        print((2*n)*" ",end="")
+        print(j* "*")
+
 
 if __name__=='__main__':
     diagonal(num)
@@ -81,3 +95,5 @@ if __name__=='__main__':
     inv_ri_shift_tri(num)
     print("\n")
     inv_traingle(num)
+    print("\n")
+    arrow(num)
